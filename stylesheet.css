@@ -56,32 +56,45 @@ ul {
 /* ---------------------------ABOUT PAGE------------------------*/
 
 .grid.about {
-	background-color: #908988;
+	background-color: #F4C5B0;
 	display: grid;
 }
 .row {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	padding: 50px;
 }
-.row .img-square {
-	height: 100px;
-	width: 100px;
+.row .headshot {
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
 }
 .row img {
-	height: 90px;
-	width: 100px;
+	height: 190px;
+	width: 200px;
+	padding-left: 200px;
+	padding-right: 200px;
 }
-.row .img1 {
+.row .zelda .paintbrush .house {
 	height: 100px;
 	width: 120px;
 }
 .title.about {
 	text-align: center;
 	color: white;
+	padding: 80px;
+	font-size: 25px;
+}
+.music img {
+	height: 100px;
+	width: 145px;
 }
 .subtitle.about {
 	color: #333333;
 }
-.row.house {
-	transform: rotateY(180deg);
+.right {
+	text-align: right;
+}
+p {
+	font-size: 20px;
 }
