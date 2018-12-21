@@ -7,7 +7,7 @@ body {
 
 }
 
-/* HOME PAGE: TOP*/
+/* ----------------HOME PAGE: TOP-------------------*/
 .grid {
 	background-attachment: scroll;
 	background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
 	overflow: visible;
 	display: grid;
 }
-.grid.top {
+.grid.home {
 	background-image: url("images/homebackground.jpg");
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -28,7 +28,7 @@ body {
 	padding-bottom: 1200px;
 	color: #333333;
 }
-.title {
+.title.home {
 	grid-area: title;
 	text-align: right;
 	padding-right: 150px;
@@ -53,61 +53,35 @@ ul {
 	padding-right: 75px;
 	color: #7D7B80;
 }
-/* ABOUT PAGE (FRONT PAGE BOTTOM)*/
+/* ---------------------------ABOUT PAGE------------------------*/
 
-.grid {
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(8, 1fr);
-	grid-template-areas:
-	"title title"
-	"row1col1 row1col2"
-	"row2col1 row2col2"
-	"row3col1 row3col2"
-	"row4col1 row4col2"
-	"row5col1 row5col2"
-	"row6col1 row6col2";
+.grid.about {
 	background-color: #908988;
+	display: grid;
 }
-.title {
+.row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.row .img-square {
+	height: 100px;
+	width: 100px;
+}
+.row img {
+	height: 90px;
+	width: 100px;
+}
+.row .img1 {
+	height: 100px;
+	width: 120px;
+}
+.title.about {
 	text-align: center;
 	color: white;
 }
-.subtitle {
+.subtitle.about {
 	color: #333333;
 }
-.row1col1 {
-	grid-area: row1col1;
-}
-.row1col2 {
-	grid-area: row1col2;
-}
-.row2col1 {
-	grid-area: row2col1;
-}
-.row2col2 {
-	grid-area: row2col2;
-}
-.row3col1 {
-	grid-area: row3col1;
-}
-.row3col2 {
-	grid-area: row3col2;
-}
-.row4col1 {
-	grid-area: row4col1;
-}
-.row4col2 {
-	grid-area: row4col2;
-}
-.row5col1 {
-	grid-area: row5col1;
-}
-.row5col2 {
-	grid-area: row5col2;
-}
-.row6col1 {
-	grid-area: row6col1;
-}
-.row6col2 {
-	grid-area: row6col2;
+.row.house {
+	transform: rotateY(180deg);
 }
